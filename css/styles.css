@@ -1,0 +1,591 @@
+/* CSS written by me; unless referenced */
+
+/* initial style for the entire document */
+body {
+    background-color: rgb(64, 35, 6);
+    color: rgb(255, 239, 169);
+    /* left & right borders of every page */
+    border-left: 2em solid rgb(64, 35, 6);
+    border-right: 2em solid rgb(64, 35, 6);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+}
+
+
+#wrapper {
+    /* enables background colour to stretch across page*/
+    background-color: rgb(235, 214, 170);
+    width: 100%;
+}
+/* Main header on every page, 'Eat with UoS'*/
+h1 {
+    font-size: 3em;
+    background-color: rgb(169, 106, 17);
+    padding: 3%;
+    font-family: Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-shadow: 2px 7px 5px rgb(41, 28, 3);
+    text-align: center;
+    /* to ensure the navigation menu is flush with the title: */
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+/* colouring of the 'o' in 'UoS' on every webpage */
+.o {
+   color:rgb(255, 199, 46);
+}
+/* Heading for each new web page */
+h2 {
+    background-color: rgb(169, 106, 17);
+    padding: 3%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(255, 239, 169);
+    font-size: 1.4em;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+/* Smaller headings for sub-titles*/
+h3 {
+    margin-top: 0%;
+    padding-left: 2%;
+    font-size: 1.2em;
+    color: rgb(255, 240, 189);
+    background-color: rgb(118, 70, 11);
+    
+}
+/*specifically for design page, to give introduction a subtitle*/ 
+#nogap {
+    margin-bottom: 0%;
+}
+
+h4 {
+    padding-left: 5%;
+    color: rgb(100, 52, 3);
+    text-decoration: underline;
+    font-size: 1.4em;
+    
+}
+p {
+    padding-left: 2em;
+    padding-right: 2em;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1em;
+    color: rgb(76, 43, 22);
+    
+}
+
+img {
+    border: 10px  solid rgb(96, 43, 5) ;
+    /* resize to 90% of page based on window size */
+    width: 90%;
+    height: auto;
+    /* to centre the image */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+nav {
+    background-color: rgb(225, 178, 112);
+}
+
+nav ul {  
+    margin-top: 0%;
+    margin-bottom: 0%;
+    padding: 20px;
+    /* get rid of ul elements (bulletpoints) */
+    list-style: none;
+    font-size: 1.3em;
+    
+   
+}
+nav ul li {
+    /* flex allows the default nav bar to be vertical */
+    display:flex;
+    padding-right: 1vw;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight:bold ;
+    
+}
+
+/* gets rid of underlined hyperlinks */
+nav a {
+    text-decoration: none;
+    outline:none;
+    padding:1px;
+
+}
+/* keeps the hyperlink the same colour until it is hovered over */
+nav a:link {
+    color: rgb(131, 56, 6);
+}
+nav a:visited {
+    color: rgb(131, 56, 6);
+}
+nav a:hover {
+    color: rgb(255, 248, 184);
+}
+
+footer {
+    background-color: rgb(186, 148, 94);
+}
+
+  
+#credit {
+    padding-bottom: 3%;
+    color: rgb(81, 56, 21);
+    text-align: center;
+    /* get rid of the dark brown border around the edge of screen */
+    margin-bottom: 0%;
+}
+  
+ul li {
+    display: inline;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+/* hyperlinks under every image */
+.caption {
+    font-size: 1em;
+    color: rgb(26, 82, 184);
+    text-decoration: none;
+    padding: 4%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.caption:hover {
+    color: rgb(116, 155, 228);
+}
+
+.source {
+    text-decoration: none;
+    color:rgb(156, 139, 61) ;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1em;
+}
+.source:hover {
+    color: #fffbac;
+}
+
+#intro {
+    background-color: rgb(223, 172, 100);
+    padding: 10px;
+    font-size: 1em;
+    
+}
+
+a {
+    font-size: 0.9em;
+    color: rgb(81, 37, 8);
+    padding: 5%;
+
+}
+
+
+/* css for images on foodanddrink.html */
+
+.container {
+    align-items:center;
+    justify-content: center;
+    margin: auto;
+    
+    
+}
+/*Image location*/
+
+.description {
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: row;
+}
+
+.img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 200px;
+    
+    
+}
+
+.imagelocation {
+    width: 90%;
+    min-width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.factbox {
+    display: flex;
+    justify-content: center;
+}
+.funfact {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: rgb(234, 133, 39);
+    background-color: rgb(255, 255, 205);
+    /* rounds fact box */
+    border-radius: 25px;
+    border: 2px solid rgb(255, 213, 0);
+    padding: 1%;
+    text-align: center;
+    width: 70%;
+    font-size: 0.85em;
+    margin: 10px 0 10px 3%;
+
+}
+/* Flip the text upside down & color it red when hovering over funfact */
+.factbox:hover {
+    border-radius: 25px;
+    transform: rotate(180deg); 
+}
+.funfact:hover {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(170, 11, 11);
+}
+
+/* Quiz Formattings */
+
+#optionPosition {
+    justify-content: center;
+    
+}
+#questionOptions {
+    color: rgb(150, 58, 0);
+    text-align: left;
+    padding-left: 10%;
+    font-size: 1em;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+.answerposition {
+    display: flex;
+    justify-content: center;
+}
+
+#sketchAnswer, #vanAnswer, #parkAnswer {
+    
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(255, 255, 205);
+    border-radius: 25px;
+    border: 2px solid rgb(255, 213, 0);
+    padding: 1%;
+    text-align: center;
+    width: 50%;
+    font-size: 1.4em;
+    /* eases the rotation of the answer button, so it isn't too sudden */
+    transition: transform 5s ease;
+    margin: 10px 0 10px 3%;
+    
+}
+
+/* changes label 'Answer' to display the actual answer  */
+#sketchAnswer:hover::after {
+    color: green;
+    content:' is B'
+}
+#sketchAnswer:hover {
+    transform: rotate(360deg);
+}
+
+
+/* reference https://stackoverflow.com/questions/9913293/change-text-on-hover-then-return-to-the-previous-text*/
+#vanAnswer:hover::after {
+    color: green;
+    content:' is D'
+}
+#vanAnswer:hover {
+    transform: rotate(360deg);
+    
+}
+
+
+#parkAnswer:hover::after {
+    
+    color: green;
+    content:' is A'
+}
+#parkAnswer:hover {
+    transform: rotate(360deg);
+}
+
+
+
+#glow:hover {
+    box-shadow: 5px 5px 5px 5px rgb(249, 238, 255);
+    
+}
+
+/* Contact Page */
+
+
+.contactposition {
+    display: flex;
+    margin: 25px;
+}
+
+td {
+    font-size: 1em;
+    color: rgb(180, 92, 5);
+    font-family:Arial, Helvetica, sans-serif;
+    
+}
+table {
+    background-color: rgb(255, 240, 213);
+    padding-right: 10%;
+}
+
+#tabletitle {
+    color: rgb(93, 51, 4);
+    font-weight: bold;
+    font-size: 1.1em;
+    
+}
+/*user form */
+
+
+#formtitle {
+    color: rgb(209, 91, 18);
+    text-align: center;
+    background-color: rgb(255, 255, 215);
+    
+}
+
+.alignlabel {
+    align-items:center;
+    color: rgb(126, 64, 7);
+    font-size: 1.8em;
+}
+
+.form {
+    display: block;
+    align-items: center;
+    justify-content: center;  
+    padding-left:50px;
+
+    
+    
+}
+
+
+#userName,#email,#comments {
+    background-color: rgb(255, 243, 196);
+    font-style: italic;
+    border-color: rgb(194, 99, 5);
+    border-width: 3px;
+}
+
+#userName:hover,#email:hover,#comments:hover {
+    background-color: rgb(238, 217, 161);
+}
+
+
+/* Similar to answer buttons in quiz */
+#submit {
+    color: rgb(119, 58, 0);
+    background-color: rgb(255, 199, 114);
+    border-radius: 40px;
+    border: 2px solid rgb(197, 94, 3);
+    padding: 5%;
+    text-align: center;
+    font-size: 1em;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+#submit:hover {
+    background-color: rgba(224, 145, 27, 0.908);
+    color: rgb(255, 236, 201);
+    
+}
+
+#pictures {
+    min-width: 50%;
+    max-width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.description2 {
+    display: flex;
+    flex-direction: row;
+}
+
+
+/* desktop view */
+
+
+@media screen and (min-width:992px) {
+
+    h1 {
+        font-size: 4rem; 
+        
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    h3 {
+        font-size: 1.8rem;
+    }
+    /* enables navigation bar to be horizontal */
+    nav ul li {
+        display: inline;
+        
+    }
+    .container {
+        display: flex;
+
+    }
+    #intro {
+        font-size: 2em;
+    }
+    nav ul {
+        font-size: 2em;
+        /* in horizontal nav bar, centres the links */
+        text-align: center;
+    }
+    #caption {
+        padding-left:130px;
+    }
+    #source {
+        padding: 130px;
+
+    }
+    .alignsource {
+        display: inline;
+        text-align: right;
+    }
+    img {
+        max-width: 60%;
+    }
+    
+    p {
+        font-size: 1.6rem;
+    }
+    .funfact {
+        font-size: 1rem;
+    }
+
+    #questionOptions {
+        font-size: 2rem;
+    }
+    #glow {
+        max-width: 50%;
+    }
+    #intro {
+        font-size: 1.4em;
+        
+    }
+    .contactposition {
+
+        margin: 20px;
+          
+    }
+    #tabletitle {
+        font-size: 1.6em;
+    }
+    td {
+        font-size: 1.6em;
+    }
+    table {
+        padding-right: 40%;
+    }
+    #alignlabel {
+        
+        font-size: 1.8em;
+    }
+    #submit {
+        padding: 1%;
+    }
+    #tableform {
+        display: flex;
+    }
+    #form {
+        padding-left: 20%;
+    }
+    .description2 {
+        font-size: 1.5em;
+
+    }
+}
+
+/*Tablet screen, similar to mobile but larger text*/
+@media screen and ((min-width:550px) and (max-width:992px)){
+
+    h1 {
+        font-size: 4rem; 
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    h3 {
+        font-size: 1.8rem;
+    }
+    /* enables the navigation bar to stay vertical */
+    nav ul li {
+        display:flex;
+        font-size: 2rem;
+        
+    }
+    .container {
+        display: block;
+        
+
+    }
+    #intro {
+        font-size: 2em;
+    }
+    nav ul {
+        font-size: 2em;
+    }
+    
+    p {
+        font-size: 1.4rem;
+    }
+    .funfact {
+        font-size: 1rem;
+    }
+
+    #questionOptions {
+        font-size: 2rem;
+    }
+    #glow {
+        max-width: 50%;
+    }
+    #intro {
+        font-size: 1.4em;
+        
+    }
+    .contactposition {
+
+        margin: 20px;
+        
+    }
+    #tabletitle {
+        font-size: 1.6em;
+    }
+    td {
+        font-size: 1.6em;
+    }
+    table {
+        padding-right: 20%;
+    }
+    #alignlabel {
+        font-size: 1.6em;
+    }
+    #submit {
+        padding: 1%;
+    }
+
+    .description2 {
+        display: flex;
+        flex-direction: row;
+    }
+}

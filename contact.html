@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Welcome</title>
+  <meta name="author" content="Emily Kong">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+
+  <div id="wrapper">
+    <header>
+      <h1>Eat with U<span class="o">o</span>S</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="foodanddrink.html">Food & Drink</a></li>
+        <li><a href="picniclocations.html">Picnic Locations</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <div>
+        <h2>Contact </h2>
+        <div id="intro">
+          <p>Here is my contact information to get in touch!</p>
+        </div> 
+
+        <div id="tableform">
+        <section id="table">
+          <p id="tabletitle"> Contact Details:</p>
+          <!-- divs help position the table  -->
+          <div class="contactposition">
+            <table id="contactTable">
+              <tr>
+                <td id="tabletitle">Email</td><td>ekong3@sheffield.ac.uk</td>
+              </tr>
+              <tr>
+                <td id="tabletitle">Address </td><td>Regent Court</td>
+              </tr>
+              <tr>
+                <td></td><td>211 Portobello</td>
+              </tr>
+              <tr>
+                <td></td><td>S1 4DP</td>
+              </tr>
+              <tr>
+                <td></td><td>Sheffield UK</td>
+              </tr>
+            </table>
+          </div>
+        </section>
+
+
+        
+        <section id="form">
+          <p id="tabletitle">Submit a Message</p>
+          <div class="form">
+            <!-- creates form that sends details to email -->
+            <form name="myform" action="mailto:ekong3@sheffield.ac.uk?subject=Website Enquiry" enctype="text/plain" method="post">
+            <label class="alignlabel" for="userName">Your name:</label>
+            <br>
+            <input type="text" name="userName" id="userName" maxlength="40" size="30" placeholder="Type your name..." required>
+            <br>
+            <label class="alignlabel" for="email">Your e-mail:</label>
+            <br>
+            <input type="email" name="email" id="email" placeholder="Type your email..." maxlength="40" size="30" required>
+            <br>
+            <label class="alignlabel" for="comments">Your message:</label>
+            <br>  
+            <textarea name="comments" id="comments" placeholder="Type your message..." rows="5" cols="29"></textarea>
+            <br>
+            <input type="submit" name="submit" id="submit" value="Submit">
+            </form>
+          </div>
+        </section>
+        </div>
+      </div>
+    </main>
+
+    <footer> 
+      <nav>
+        <ul>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="legalandsecurity.html">Legal & Security</a></li>
+          <li><a href="design.html">Design</a></li>
+          <li><a href="accessibility.html">Accessibility</a></li>
+          <li><a href="testing.html">Testing</a></li>
+        </ul>
+      </nav>
+      <p id ="credit">Website made by Emily Kong</p>
+      <!-- Code written by me -->
+      <!-- Navigation menu derived from Week 5 of COM1008 Tutorial Tasks
+        https://com1008.sheffield.ac.uk/ch5.shtml -->
+    </footer>
+  </div>
+</body>
+
+</html>

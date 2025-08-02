@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Welcome</title>
+  <meta name="author" content="Emily Kong">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+
+  <div id="wrapper">
+    <header>
+      <h1>Eat with U<span class="o">o</span>S</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="foodanddrink.html">Food & Drink</a></li>
+        <li><a href="picniclocations.html">Picnic Locations</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+      </ul>
+    </nav>
+
+    <main>
+
+      <section>
+        <h2>Testing </h2>
+      </section>
+
+      <section>
+        <h3>Optimisation</h3>
+        <p>To optimise my page, I ensured to use only jpg and png image files stored in the same space as my HTML files so that images would be easy to access. Depending on the size of the screen, I also scaled down images, limiting their width, so it wouldn't consume the screen. </p>
+      </section>
+
+      <section id="debugging">
+        <h3>Debugging</h3>
+        <p>
+          In order to validate my HTML and CSS, I used online validator tools where I could upload my files and check the code was coherent to be a HTML and CSS file. 
+        </p> 
+        <h4>HTML</h4>
+        <p>For HTML, I used the W3C HTML validator.
+          <a href="https://validator.w3.org/">https://validator.w3.org/</a>
+          <img src="htmlErrors.png" alt="Errors shown on the Food and Drink page">
+          <br>
+            Using the validator, it showed me all the errors that I made during development, so I could change any mistakes. It made me realise that I shouldn't use IDs multiple times, and instead assign them to be classes. The following image confirms my HTML validity after changes were made. 
+          <br>
+          <br>
+          <img src="htmlChecked.png" alt="W3C's confirmation that my web page has no erros or warnings">
+        </p>
+        <h4>CSS</h4>
+        <p>
+          For CSS, I used the W3C CSS validator.
+          <a href="https://jigsaw.w3.org/css-validator/validator.html.en">https://jigsaw.w3.org/css-validator/validator.html.en</a>
+          <img src="csserrors.png" alt="Errors for CSS for entire document">
+          With this, I was able to identify which line numbers had errors and fix them accordingly; in the case above, it made me realise I had redundant CSS in a class and that I had closed a style before I was meant to. <br><br>
+          After correcting these mistakes, I achieved the following image, and am able to display the CSS validated icon on my webpage. 
+          <img src="cssChecked.png" alt="W3C's confirmation that my CSS has no errors">
+        </p>
+        <p>
+          <a href="http://jigsaw.w3.org/css-validator/check/referer">
+              <img style="border:0;width:88px;height:31px"
+                  src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                  alt="Valid CSS!" />
+              </a>
+          </p>
+                
+      </section>
+
+      <section>
+        <h3>Browser Testing</h3>
+        <p>In compliance with my breakpoints and tweakpoints, throughout the website's development I was checking the formatting on desktop, mobile and ipad/tablets. To do this, I used Google Chrome's DevTools and toggled the different devices to see what they would look like in the same dimensions as the devices. </p>
+        <h4>Desktop:</h4>
+        <img src="nesthubview.png" alt="Desktop view of page">
+        <h4>Tablet:</h4>
+        <img src="ipadview.png" alt="Ipad view of page">
+        <h4>Tablet horizontal:</h4>
+        <img src="ipadhorizontal.png" alt="Horizontal ipad view of page">
+        <h4>Mobile view:</h4>
+        <img src="iphoneview.png" alt="Mobile phone view of page">
+        <p>Seeing all the different views helped me to size everything, especially in media queries which would shift the navigation menu & images around depending on how wide the screen got. It made me realise I needed a different layout for the navigation menu on screens smaller than tablets, since the horizontal view would push words onto the next line. 
+        <br><br>
+        In terms of browser testing, I utilised Chrome and Microsoft Edge during development, which both functioned similiarly, and for mobile I used Safari, all which didn't raise any issues.
+        </p>
+
+      
+      </section>
+
+      <section>
+        <h3>Accessibility</h3>
+        <p>To test out the accessibility of my site, I used the Web Accessibility Evaluation Tool as an extension to check for errors.</p>
+        <a href="https://wave.webaim.org/extension/">https://wave.webaim.org/extension/</a>
+        <img src="contrastissue.png" alt="Screenshot of errors with colour contrasting from the accessibility extension, WAVE.">
+        <p>In response to the low contrast errors, I was able to adjust my colour palettes accordingly:
+        <br><br>
+        <img src="contrastAfter.png" alt="Screenshot of the errors after correcting the CSS">
+        <br><br>
+        The WAVE (web accessibility evaluation tool) was useful in identifying the contrast errors, and confirms that it would be usable to those who may have disabilities or use a screen-reader. 
+        </p>
+      </section>
+
+    </main>
+
+    <footer> 
+      <nav>
+        <ul>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="legalandsecurity.html">Legal & Security</a></li>
+          <li><a href="design.html">Design</a></li>
+          <li><a href="accessibility.html">Accessibility</a></li>
+          <li><a href="testing.html">Testing</a></li>
+        </ul>
+      </nav>
+      <p id ="credit">Website made by Emily Kong</p>
+      <!-- Code written by me -->
+      <!-- Navigation menu derived from Week 5 of COM1008 Tutorial Tasks
+        https://com1008.sheffield.ac.uk/ch5.shtml -->
+    </footer>
+  </div>
+</body>
+
+</html>

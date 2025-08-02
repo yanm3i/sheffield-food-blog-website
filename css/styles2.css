@@ -1,0 +1,307 @@
+/* initial style for the entire document */
+body {
+    background-color: rgb(64, 35, 6);
+    color: rgb(255, 239, 169);
+    border-left: 2em solid rgb(64, 35, 6);
+    border-right: 2em solid rgb(64, 35, 6);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    
+}
+
+
+#wrapper {
+    /* colour for most of the pages */
+    background-color: rgb(235, 214, 170);
+    width: 100%;
+    margin: 0 auto;
+}
+/* Main header on every page, 'Eat with UoS'*/
+h1 {
+    font-size: 8rem;
+    background-color: rgb(169, 106, 17);
+    padding: 3%;
+    font-family: Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-shadow: 2px 7px 5px rgb(41, 28, 3);
+    text-align: center;
+}
+h2 {
+    background-color: rgb(169, 106, 17);
+    padding: 3%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(255, 239, 169);
+    font-size: 2em;
+}
+
+h3 {
+    padding-left: 2%;
+    font-size: 1.5em;
+    color: rgb(255, 240, 189);
+    background-color: rgb(163, 100, 23);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    padding-left: 2em;
+    padding-right: 2em;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1em;
+    color: rgb(76, 43, 22);
+    
+}
+
+img {
+    float:none;
+    border: 10px  solid rgb(96, 43, 5) ;
+    /* resize to 90% of page based on window size */
+    width: 90%;
+    height: auto;
+    /* to centre the image */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav {
+    background-color: rgb(225, 178, 112);
+    
+}
+
+nav ul {  
+    margin: 0;
+    padding: 20px;
+    list-style: none;
+    font-size: 1em;
+    text-align: center;
+}
+nav ul li {
+    display: inline;
+    padding-right: 1vw;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight:bold ;
+}
+
+nav a {
+    text-decoration: none;
+    outline:none;
+    padding:1px;
+
+}
+/* keeps the hyperlink the same colour until it is hovered over */
+nav a:link {
+    color: rgb(131, 56, 6);
+}
+nav a:visited {
+    color: rgb(131, 56, 6);
+}
+nav a:hover {
+    color: rgb(255, 248, 184);
+}
+
+footer {
+    background-color: rgb(186, 148, 94);
+}
+
+  
+#credit {
+    padding-bottom: 2%;
+    color: rgb(81, 56, 21);
+    text-align: center;
+}
+  
+ul li {
+    display: inline;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+/* hyperlinks under every image */
+#caption {
+    font-size: 1em;
+    color: rgb(26, 82, 184);
+    text-decoration: none;
+    padding: 4%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: inline;
+    
+}
+
+#caption:hover {
+    color: rgb(116, 155, 228);
+}
+
+#source {
+    text-decoration: none;
+    color:rgb(156, 139, 61) ;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: inline;
+}
+#source:hover {
+    color: rgb(255, 246, 206);
+}
+
+#intro {
+    background-color: rgb(223, 172, 100);
+    padding: 10px;
+    
+}
+
+a {
+    font-size: 0.9em;
+    color: rgb(81, 37, 8);
+    padding: 5%;
+
+}
+
+
+/* css for images on foodanddrink.html */
+
+/*.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    
+}*/
+
+
+
+.location {
+    
+    border: 10px  solid rgb(96, 43, 5) ;
+    width: 40%;
+    height: auto;
+    margin-left: 10px;
+    max-width: 100%;
+    max-height: 100%;
+    
+
+}
+
+#wrapsection {
+    display: flex;
+    width: 90%;
+    height: 80%; 
+}
+.imagecontainer {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-image: url('diamondkitchen.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+.imagecontainer img{
+    /*display: block;*/
+    display: flex;
+    width: 90%;
+    height: ;
+    
+}
+.description {
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 2em;
+    background-color: rgb(255, 251, 203);
+    padding: 20px;
+    border-radius: 8px;
+    opacity: 0.7;
+    color: black;
+ 
+}
+
+.img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 200px;
+    margin: auto;
+}
+
+.imagelocation {
+    width: 90%;
+    min-width: %;
+}
+
+.factbox {
+    display: flex;
+    justify-content: center;
+}
+.funfact {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: rgb(234, 133, 39);
+    background-color: rgb(255, 255, 205);
+    border-radius: 25px;
+    border: 2px solid rgb(255, 213, 0);
+    padding: 1%;
+    text-align: center;
+    width: 70%;
+    font-size: 2em;
+    transition: transform 0.7s ease;
+    margin: 10px 0 10px 3%;
+
+}
+/* Flip the text upside down & color it red when hovering over funfact */
+.factbox:hover {
+    border-radius: 25px;
+    transform: rotate(180deg); 
+}
+.funfact:hover {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(170, 11, 11);
+}
+
+@media screen and (min-width:280px) {
+    .description {
+        font-size: 1.2em;
+    }
+}
+
+/* desktop view */
+@media screen and (max-width:850px) {
+    h1 {
+        font-size: 3.6rem;
+    }
+}
+
+@media screen and (max-width:850px) {
+    
+    h1 {
+        font-size: 3.6rem;
+    }
+}
+
+
+
+@media screen and (max-width:850px) {
+    .description {
+        font-size: 1em;
+        
+    }
+    #caption {
+        font-size: 0.9em;
+    }
+    .funfact {
+        font-size: 2em;
+    }
+
+    #caption {
+        font-size: 0.65em;
+        display: inline;  
+    }
+    
+    #source {
+        font-size: 0.65em;
+        display: inline;
+    }
+}
